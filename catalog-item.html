@@ -16,8 +16,9 @@
           <input type="search">
         </form> -->
       <ul class="user-navigation">
-        <li>
-          Войти
+        <li class="user-name">
+          <p>Валентин Петухов</p>
+          <button class="user-name-button">Выйти</button>
         </li>
         <li>
           <a href="">Сравнить</a>
@@ -63,41 +64,48 @@
     </ul>
   </header>
   <main class="container">
-    <section class="about-us">
-      <span class="icon-line"></span>
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-        компаниями:</p>
-      <ul class="partners">
-        <li>Деловые Линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="button" href="">Подробнее о нас</a>
+    <h1 class="page-title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs-current">
+        Моноподы для селфи
+      </li>
+    </ul>
+    <section class="main-filters">
+      <h2 class="visually-hidden">Сортировка</h2>
     </section>
-    <section class="contacts">
-      <span class="icon-line"></span>
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
-        бывает.</p>
-      <div style="overflow:hidden;width: 560px;position: relative;"><iframe width="560" height="220"
-          src="https://maps.google.com/maps?width=560&amp;height=220&amp;hl=en&amp;q=Moscow%2C%20Russia+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"
-          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        <div
-          style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
-          <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href=""></a> & <a
-              href="https://iamsterdamcard.it">iamsterdam card.it</a></small></div>
-        <style>
-          #gmap_canvas img {
-            max-width: none !important;
-            background: none !important
-          }
-
-        </style>
-      </div><br />
-      <!--Не совсем понимаю как делать карты, поэтому пока так -->
-      <button class="button">Напишите нам</button>
+    <section class="side-filters">
+      <h2 class="visually-hidden">Вспомогательный фильтр</h2>
+    </section>
+    <section class="catalog">
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <h3 class="item-title">Любительская селфи-палка</h3>
+          <span class="item-price">500 руб.</span>
+          <img src="img/item-1" alt="Любительская селфи-палка" width="360" height="380">
+        </li>
+        <li class="catalog-item">
+          <h3 class="item-title">Профессиональная селфи-палка</h3>
+          <span class="item-price">1 500 руб.</span>
+          <img src="img/item-1" alt="Профессиональная селфи-палка" width="360" height="380">
+        </li>
+        <li class="catalog-item">
+          <h3 class="item-title">Непотопляемая селфи-палка</h3>
+          <span class="item-price">2 500 руб.</span>
+          <img src="img/item-1" alt="Непотопляемая селфи-палка" width="360" height="380">
+        </li>
+        <li class="catalog-item">
+          <h3 class="item-title">Селфи-палка "Следуй за мной"</h3>
+          <span class="item-price">4 900 руб.</span>
+          <img src="img/item-1" alt="Селфи-палка  «Следуй за мной»" width="360" height="380">
+          <span class="new-icon"></span>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="main-footer">
@@ -107,7 +115,8 @@
       </a>
       <ul class="user-navigation">
         <li>
-          Войти
+          <p>Валентин Петухов</p>
+          <button class="user-name-button">Выйти</button>
         </li>
         <li>
           <a href="">Сравнить</a>
@@ -138,13 +147,13 @@
       <span class="custom-line">Line</span>
       <ul class="footer-social">
         <li>
-          <a class="social-button social-fb" href="">Фейсбук</a>
+          <a class="social-button" href="">Фейсбук</a>
         </li>
         <li>
-          <a class="social-button social-instagram" href="">Инстагрэм</a>
+          <a class="social-button" href="">Инстагрэм</a>
         </li>
         <li>
-          <a class="social-button social-tw" href="">Твиттер</a>
+          <a class="social-button" href="">Твиттер</a>
         </li>
       </ul>
       <p class="footer-copyright">
@@ -152,16 +161,7 @@
       </p>
     </div>
   </footer>
-  <section class="modal modal-contacts">
-    <h2 class="visually-hidden">Напишите нам</h2>
-    <!-- Форма -->
-    <span class="modal-close">x</span>
-  </section>
 
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
-  </section>
 </body>
 
 </html>
