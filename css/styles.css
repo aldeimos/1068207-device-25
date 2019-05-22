@@ -1,1 +1,451 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Light'), local('Gilroy-Light'), url('../font/Gilroylight.woff2') format('woff2'), url('../font/Gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../font/Gilroyextrabold.woff2') format('woff2'), url('../font/Gilroyextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #fff;
+}
+
+.button {
+  position: relative;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  border: none;
+  width: 260px;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #f0c52e;
+}
+
+.button:active {
+  background: #f0c52e;
+  opacity: 0.7;
+}
+
+.button::after {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: #f0c52e;
+  top: 33%;
+  content: "";
+  height: 8px;
+}
+
+a.button {
+  padding: 8px 42px;
+}
+
+a.button::after {
+  top: 40%;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+.main-header {
+  background-color: #f7e296;
+}
+
+.main-logo:hover img {
+  opacity: 0.7;
+}
+
+.main-logo:active img {
+  opacity: 0.5;
+}
+
+.user-navigation,
+.main-menu,
+.catalog-menu {
+  list-style: none;
+}
+
+
+
+.user-navigation a,
+.main-menu a,
+.catalog-menu a,
+.search-form__input {
+  color: #000;
+}
+
+.search-form__input {
+
+  font: inherit;
+
+  border: none;
+  background-color: #f7e296;
+
+  opacity: 0.7;
+}
+
+.search-form__input:hover {
+  opacity: 1;
+}
+
+.search-form__input:focus {
+  border-bottom: 2px solid #000;
+
+  opacity: 1;
+}
+
+.search-form__btn {
+  display: none;
+
+  border: 2px solid #000;
+  background: transparent;
+}
+
+.search-form__input:focus+.search-form__btn {
+  display: block;
+}
+
+
+
+.search-form__btn:hover {
+  font: inherit;
+
+  background: #000;
+  color: #fff;
+}
+
+.main-menu {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #000;
+
+}
+
+.catalog-menu {
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+  font-weight: 300;
+}
+
+
+
+.main-menu a:hover,
+.user-navigation a:hover {
+  opacity: 0.7;
+}
+
+.main-menu a:active,
+.user-navigation a:active {
+  opacity: 0.5;
+}
+
+/* main */
+
+.about-us h2,
+.contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+
+  color: #000;
+}
+
+.custom-line-b {
+  display: block;
+  width: 80px;
+  height: 7px;
+  background: black;
+}
+
+.about-us p,
+.contacts p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
+
+
+
+.about-us a {
+  color: #000;
+}
+
+.partners {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+
+  list-style: none;
+  color: #000;
+
+}
+
+.partners li {
+  position: relative;
+}
+
+.partners li:before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: -31px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+/* footer */
+
+.main-footer {
+  background: #464646;
+}
+
+.footer-logo:hover {
+  opacity: 0.7;
+}
+
+.footer-logo:active {
+  opacity: 0.5;
+}
+
+.footer-user-list a {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footer-user-list a:hover {
+  opacity: 1;
+}
+
+.footer-user-list a:active {
+  opacity: 0.5;
+}
+
+.footer-main-menu a {
+  color: #fff;
+}
+
+.footer-copyright a:hover {
+  opacity: 0.7;
+}
+
+.footer-copyright a:active {
+  opacity: 0.5;
+}
+
+.custom-line {
+  display: block;
+  width: 80px;
+  height: 7px;
+  background: #ffc600;
+}
+
+
+
+/* modals */
+
+.login-form input,
+.login-form textarea {
+
+  font-size: 14px;
+  line-height: 18px;
+  background: #f2f2f2;
+  border: none;
+  resize: none;
+}
+
+.login-form input:hover,
+.login-form textarea:hover {
+  background: #eaeaea;
+}
+
+.login-form input:invalid,
+.login-form textarea:invalid {
+  background: #f6dada;
+}
+
+.login-form input:focus,
+.login-form textarea:focus {
+  background: #fff;
+  border: 3px solid #f7e296;
+  outline-color: #f7e296;
+}
+
+.login-form label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: #000;
+
+}
+
+/* catalog.html */
+
+
+.username-button {
+  font: inherit;
+
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+
+  opacity: 0.5;
+}
+
+.username-button:hover {
+  opacity: 1;
+}
+
+.username-button:active {
+  opacity: 0.3;
+}
+
+.page-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+
+  color: #000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #000;
+  opacity: 0.5;
+}
+
+.breadcrumbs a:hover {
+  opacity: 1;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.3;
+}
+
+.filters {
+  background: #efefef;
+}
+
+.filters h2,
+.sorting-filters h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filter-form {
+  color: #000;
+}
+
+.filter-form legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-form ul {
+  list-style: none;
+
+}
+
+.filter-option:hover {
+  opacity: 0.7;
+}
+
+.filter-option:active {
+  opacity: 0.5;
+}
+
+
+.filter-button {
+  background: #efefef;
+}
+
+.item-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: #000;
+}
+
+.item-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+
+  color: #000;
+}
+
+.main-footer .username-button {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.main-footer .username-button:hover {
+  opacity: 1;
+}
+
+.main-footer .username-button:active {
+  opacity: 0.5;
+}

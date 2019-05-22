@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header class="main-header">
-    <a href="index.html">
+    <a class="main-logo" href="index.html">
       <img src="img/index-logo.svg" alt="Логотип Девайс" width="163" height="35">
     </a>
     <nav class="main-navigation">
@@ -18,7 +21,7 @@
       <ul class="user-navigation">
         <li class="user-authorization">
           <a href="#">Валентин Петухов</a>
-          <button class="user-name-button">Выйти</button>
+          <button class="username-button">Выйти</button>
         </li>
         <li>
           <a href="#">Сравнить</a>
@@ -77,8 +80,8 @@
       </li>
     </ul>
     <section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form class="filer-form" action="https://echo.htmlacademy.ru" method="get">
+      <h2>Фильтр:</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Цвет:</legend>
           <ul>
@@ -143,7 +146,7 @@
     </section>
     <section class="catalog">
       <section class="sorting-filters">
-        <h2 class="visually-hidden">Сортировка товаров</h2>
+        <h2>Сортировка:</h2>
       </section>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -174,7 +177,7 @@
         <li class="catalog-item">
           <img src="img/product-4.jpg" alt="Селфи-палка  «Следуй за мной»" width="360" height="380">
           <a href="#">
-            <h3 class="item-title">Селфи-палка "Следуй за мной"</h3>
+            <h3 class="item-title">Селфи-палка «Следуй за мной»</h3>
           </a>
           <span class="item-price">4 900 руб.</span>
           <span class="new-icon"></span>
@@ -184,13 +187,13 @@
   </main>
   <footer class="main-footer">
     <div class="footer-nav">
-      <a href="index.html">
-        <img src="img/index-logo.svg" alt="Логотип Девайс" width="163" height="35">
+      <a class="footer-logo" href="index.html">
+        <img src="img/footer-logo.svg" alt="Логотип Девайс" width="163" height="35">
       </a>
-      <ul class="user-navigation">
+      <ul class="user-navigation footer-user-list">
         <li class="user-authorization">
           <a href="#">Валентин Петухов</a>
-          <button class="user-name-button">Выйти</button>
+          <button class="username-button">Выйти</button>
         </li>
         <li>
           <a href="#">Сравнить</a>
@@ -204,7 +207,7 @@
       <p class="footer-address">
         г. Москва, ул. Строителей, 15
       </p>
-      <ul class="main-menu-item">
+      <ul class="main-menu footer-main-menu">
         <li class="main-menu-item">
           <a href="#">Доставка</a>
         </li>
@@ -218,7 +221,7 @@
       <p class="contacts">Тел.: +7 (495) 495-95-95</p>
     </div>
     <div>
-      <span class="custom-line">Line</span>
+      <span class="custom-line"></span>
       <ul class="footer-social">
         <li>
           <a class="social-button" href="#">Фейсбук</a>
@@ -232,7 +235,7 @@
       </ul>
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/copyright-icon.svg" alt="HTML Академия" width="27" height="35">
+          <img src="img/copyright-icon-1.svg" alt="HTML Академия" width="27" height="35">
         </a>
       </p>
     </div>
