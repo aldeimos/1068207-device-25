@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Gilroy';
   src: local('Gilroy Light'), local('Gilroy-Light'), url('../font/Gilroylight.woff2') format('woff2'), url('../font/Gilroylight.woff') format('woff');
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -40,22 +40,22 @@ body {
 }
 
 .button:hover {
-  background: #f0c52e;
+  background-color: #f0c52e;
 }
 
 .button:active {
-  background: #f0c52e;
+  background-color: #f0c52e;
   opacity: 0.7;
 }
 
 .button::after {
+  content: "";
   position: absolute;
   left: 0;
   z-index: -1;
   width: 100%;
   background-color: #f0c52e;
   top: 33%;
-  content: "";
   height: 8px;
 }
 
@@ -66,9 +66,6 @@ a.button {
 a.button::after {
   top: 40%;
 }
-
-
-
 
 a {
   text-decoration: none;
@@ -93,8 +90,6 @@ a {
 .catalog-menu {
   list-style: none;
 }
-
-
 
 .user-navigation a,
 .main-menu a,
@@ -134,8 +129,6 @@ a {
   display: block;
 }
 
-
-
 .search-form__btn:hover {
   font: inherit;
 
@@ -152,17 +145,14 @@ a {
   text-transform: uppercase;
 
   color: #000;
-
 }
 
 .catalog-menu {
   font-size: 15px;
   line-height: 36px;
   text-transform: none;
-  font-weight: 300;
+  font-weight: 400;
 }
-
-
 
 .main-menu a:hover,
 .user-navigation a:hover {
@@ -175,6 +165,22 @@ a {
 }
 
 /* main */
+.about-us,
+.contacts {
+  position: relative;
+}
+
+.about-us::before,
+.contacts::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+
+  top: -30px;
+
+  background-color: black;
+}
 
 .about-us h2,
 .contacts h2 {
@@ -186,12 +192,13 @@ a {
   color: #000;
 }
 
-.custom-line-b {
+/* .custom-line-b {
   display: block;
   width: 80px;
   height: 7px;
-  background: black;
-}
+  background-color: black;
+} */
+
 
 .about-us p,
 .contacts p {
@@ -200,8 +207,6 @@ a {
   line-height: 30px;
   color: #464646;
 }
-
-
 
 .about-us a {
   color: #000;
@@ -276,12 +281,14 @@ a {
   display: block;
   width: 80px;
   height: 7px;
-  background: #ffc600;
+  background-color: #ffc600;
 }
 
-
-
 /* modals */
+
+.modal {
+  box-shadow: 0 5px 25px 0px rgba(4, 6, 6, 0.3);
+}
 
 .login-form input,
 .login-form textarea {
@@ -305,7 +312,7 @@ a {
 
 .login-form input:focus,
 .login-form textarea:focus {
-  background: #fff;
+  background-color: #fff;
   border: 3px solid #f7e296;
   outline-color: #f7e296;
 }
@@ -322,7 +329,6 @@ a {
 
 /* catalog.html */
 
-
 .username-button {
   font: inherit;
 
@@ -333,6 +339,8 @@ a {
 
   opacity: 0.5;
 }
+
+
 
 .username-button:hover {
   opacity: 1;
@@ -414,7 +422,6 @@ a {
   opacity: 0.5;
 }
 
-
 .filter-button {
   background: #efefef;
 }
@@ -432,7 +439,7 @@ a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: 400;
 
   color: #000;
 }
