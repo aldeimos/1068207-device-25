@@ -10,88 +10,106 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <div class="container">
+    <header class="main-header">
 
-    <a class="main-logo" href="index.html">
-      <img src="img/index-logo.svg" alt="Логотип Девайс" width="163" height="35">
-    </a>
-    <nav class="main-navigation">
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <input class="search-form__input" type="search" name="search" placeholder="Поиск по сайту">
-        <button class="search-form__btn" type="submit">Найти</button>
-      </form>
-      <ul class="user-navigation">
-        <li>
-          <a class="login-link" href="login.html">Войти</a>
-        </li>
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="main-menu">
-      <li class="main-menu-item catalog">
-        <a href="#">Каталог товаров</a>
-        <ul class="catalog-menu">
-          <li class="catalog-menu-item">
-            <a href="#">Виртуальная реальность</a>
+
+      <a class="main-logo" href="index.html">
+        <img src="img/index-logo.svg" alt="Логотип Девайс" width="163" height="35">
+      </a>
+
+      <nav class="main-navigation">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-form__input" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="search-form__btn" type="submit">Найти</button>
+        </form>
+        <ul class="user-navigation">
+          <li>
+            <a class="login-link" href="login.html">Войти</a>
           </li>
-          <li class="catalog-menu-item">
-            <a href="catalog.html">Моноподы для селфи</a>
+          <li>
+            <a href="#">Сравнить</a>
           </li>
-          <li class="catalog-menu-item">
-            <a href="#">Экшн-камеры</a>
-          </li>
-          <li class="catalog-menu-item">
-            <a href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="catalog-menu-item">
-            <a href="#">Умные часы</a>
-          </li>
-          <li class="catalog-menu-item">
-            <a href="#">Квадрокоптеры</a>
+          <li>
+            <a href="#">Корзина</a>
           </li>
         </ul>
-      </li>
-      <li class="main-menu-item">
-        <a href="#">Доставка</a>
-      </li>
-      <li class="main-menu-item">
-        <a href="#">Гарантия</a>
-      </li>
-      <li class="main-menu-item">
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-  </header>
-
-  <main class="container">
-    <div class="index-column">
-      <section class="about-us">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-          компаниями:</p>
-        <ul class="partners">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+      </nav>
+      <div class="header-layout">
+        <ul class="main-menu">
+          <li class="main-menu-item catalog">
+            <a href="#">Каталог товаров</a>
+            <ul class="catalog-menu">
+              <ul class="catalog-menu-column-1">
+                <li class="catalog-menu-item">
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="catalog-menu-column-2">
+                <li class="catalog-menu-item">
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="catalog-menu-column-3">
+                <li class="catalog-menu-item">
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </ul>
+          </li>
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-          Всякое
-          бывает.</p>
-        <p>
-          <img src="img/map-xs.jpg" alt="Офис компании по адресу г.Москва, ул. Строителей, 15" width="560" height="222">
-        </p>
-        <button class="button" type="button">Напишите нам</button>
-      </section>
+        <ul class="service-navigation">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <main class="">
+    <div class="container">
+      <div class="index-column">
+        <section class="about-us">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
+            который есть в каждом из нас</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+            компаниями:</p>
+          <ul class="partners">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о нас</a>
+        </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+            Всякое
+            бывает.</p>
+          <p>
+            <img src="img/map-xs.jpg" alt="Офис компании по адресу г.Москва, ул. Строителей, 15" width="560"
+              height="222">
+          </p>
+          <button class="button" type="button">Напишите нам</button>
+        </section>
+      </div>
     </div>
   </main>
 
