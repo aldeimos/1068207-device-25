@@ -37,7 +37,7 @@
       <div class="header-layout">
         <ul class="main-menu">
           <li class="main-menu-item catalog-link">
-            <a href="#">Каталог товаров</a>
+            <a class="catalog-active-link" href="#">Каталог товаров</a>
             <ul class="catalog-menu">
               <ul class="catalog-menu-column-1">
                 <li class="catalog-menu-item">
@@ -105,6 +105,27 @@
           </div>
           <div class="catalog-sort">
             <h2>Сортировка:</h2>
+            <div class="catalog-sort-nav">
+              <ul class="catalog-sort-nav__left">
+                <li>
+                  <a href="#">По цене</a>
+                </li>
+                <li>
+                  <a href="#">По типу</a>
+                </li>
+                <li>
+                  <a href="#">По популярности</a>
+                </li>
+              </ul>
+              <ul class="catalog-sort-nav__right">
+                <li>
+                  <a class="nav-arrow-up" href="#">Упорядочить по возрастанию</a>
+                </li>
+                <li>
+                  <a class="nav-arrow-down" href="#">Упорядочить по убыванию</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -114,7 +135,26 @@
         <div class="catalog-inner-wrapper">
           <section class="filters">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
+              <fieldset class="price-filter">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от</label>
+                    <input name="min-price" type="text" value="0">
+
+                    <label class="max-price">до</label>
+                    <input name="max-price" type="text" value="5000">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="color-filter">
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter-option">
@@ -154,7 +194,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="radio-filter">
                 <legend>Bluetooth</legend>
                 <ul>
                   <li class="filter-option">
@@ -181,44 +221,94 @@
           <section class="catalog-page">
             <ul class="catalog-list">
               <li class="catalog-item">
-                <img src="img/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                <div>
+                <div class="image-wrapper">
+                  <img class="product-image" src="img/product-1.jpg" alt="Любительская селфи-палка" width="360"
+                    height="380">
+                  <div class="hover-links">
+                    <a class="button hover-button-cart" href="#">В корзину</a>
+                    <a class="hover-button-compare" href="#">Добавить к сравнению</a>
+                  </div>
+                  <span class="new-icon visually-hidden"></span>
+                </div>
+                <div class="item-info">
                   <a href="#">
                     <h3 class="item-title">Любительская селфи-палка</h3>
                   </a>
                   <span class="item-price">500 руб.</span>
                 </div>
-                <span class="new-icon visually-hidden"></span>
               </li>
               <li class="catalog-item">
-                <img src="img/product-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                <div>
-                  <a href="#">
-                    <h3 class="item-title">Профессиональная селфи-палка</h3>
-                  </a>
-                  <span class="item-price">1 500 руб.</span>
+                <div class="image-wrapper">
+                  <img class="product-image" src="img/product-2.jpg" alt="Любительская селфи-палка" width="360"
+                    height="380">
+                  <div class="hover-links">
+                    <a class="button hover-button-cart" href="#">В корзину</a>
+                    <a class="hover-button-compare" href="#">Добавить к сравнению</a>
+                  </div>
+                  <span class="new-icon visually-hidden"></span>
                 </div>
-                <span class="new-icon visually-hidden"></span>
+                <div class="item-info">
+                  <a href="#">
+                    <h3 class="item-title">Любительская селфи-палка</h3>
+                  </a>
+                  <span class="item-price">500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item">
-                <img src="img/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                <div>
-                  <a href="#">
-                    <h3 class="item-title">Непотопляемая селфи-палка</h3>
-                  </a>
-                  <span class="item-price">2 500 руб.</span>
+                <div class="image-wrapper">
+                  <img class="product-image" src="img/product-3.jpg" alt="Любительская селфи-палка" width="360"
+                    height="380">
+                  <div class="hover-links">
+                    <a class="button hover-button-cart" href="#">В корзину</a>
+                    <a class="hover-button-compare" href="#">Добавить к сравнению</a>
+                  </div>
+                  <span class="new-icon visually-hidden"></span>
                 </div>
-                <span class="new-icon visually-hidden"></span>
+                <div class="item-info">
+                  <a href="#">
+                    <h3 class="item-title">Любительская селфи-палка</h3>
+                  </a>
+                  <span class="item-price">500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item">
-                <img src="img/product-4.jpg" alt="Селфи-палка  «Следуй за мной»" width="360" height="380">
-                <div>
-                  <a href="#">
-                    <h3 class="item-title">Селфи-палка «Следуй за мной»</h3>
-                  </a>
-                  <span class="item-price">4 900 руб.</span>
+                <div class="image-wrapper">
+                  <img class="product-image" src="img/product-4.jpg" alt="Любительская селфи-палка" width="360"
+                    height="380">
+                  <div class="hover-links">
+                    <a class="button hover-button-cart" href="#">В корзину</a>
+                    <a class="hover-button-compare" href="#">Добавить к сравнению</a>
+                  </div>
+                  <span class="new-icon visually-hidden"></span>
                 </div>
-                <span class="new-icon"></span>
+                <div class="item-info">
+                  <a href="#">
+                    <h3 class="item-title">Любительская селфи-палка</h3>
+                  </a>
+                  <span class="item-price">500 руб.</span>
+                </div>
+              </li>
+
+            </ul>
+            <ul class="pagination-list">
+              <li>
+                <a href="#">Назад</a>
+              </li>
+              <li>
+                <ul class="pages-list">
+                  <li>
+                    <a class="active-pagination" href="#">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Вперед</a>
               </li>
             </ul>
           </section>
