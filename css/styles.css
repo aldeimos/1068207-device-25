@@ -23,7 +23,7 @@ html {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
 
   height: 1px;
   width: 1px;
@@ -140,11 +140,11 @@ a {
 }
 
 .main-logo:hover img {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .main-logo:active img {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .user-navigation,
@@ -337,6 +337,10 @@ a {
   background-color: #f7e296;
 }
 
+.catalog-menu>li {
+  display: flex;
+}
+
 
 
 .catalog-link:hover>.catalog-menu {
@@ -359,11 +363,11 @@ a {
 
   background: url("../img/plus.svg") no-repeat;
 
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .catalog-active-link:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .catalog-active-link:active {
@@ -418,13 +422,13 @@ a {
 .main-menu a:hover,
 .user-navigation a:hover,
 .service-list a:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .main-menu a:active,
 .user-navigation a:active,
 .service-list a:active {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 /* main */
@@ -734,15 +738,17 @@ a {
   display: flex;
   flex-direction: column;
   width: 300px;
+
 }
 
 .services-slider-controls::after {
   content: "";
   position: absolute;
   right: 16px;
-  bottom: 0;
+  top: -54px;
   width: 7px;
-  height: 320px;
+  min-height: 320px;
+  height: 100%;
 
   background-color: #000;
 }
@@ -767,6 +773,10 @@ a {
 
 .input-button:hover {
   background-color: #f0c52e;
+}
+
+.input-button:active {
+  opacity: 0.5;
 }
 
 .input-button::after {
@@ -1309,6 +1319,10 @@ a {
   opacity: 1;
 }
 
+.modal-close:active::before {
+  opacity: 0.3;
+}
+
 /* catalog.html */
 
 .username-button {
@@ -1443,6 +1457,7 @@ a {
 
 .catalog-sort-nav__left {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-sort-nav__left li {
@@ -1501,6 +1516,16 @@ a {
 
   background: url("../img/nav-arrow-down.svg") no-repeat;
 
+}
+
+.nav-arrow-up:hover,
+.nav-arrow-down:hover {
+  opacity: 0.4;
+}
+
+.nav-arrow-up:active,
+.nav-arrow-down:active {
+  opacity: 1;
 }
 
 .filter-header h2,
@@ -1811,7 +1836,29 @@ a {
   opacity: 0.7;
 }
 
+.new-icon {
+  content: "";
+  position: absolute;
+  top: 29px;
+  right: 27px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 0.1;
+}
 
 .catalog-list .item-title {
   width: 260px;
