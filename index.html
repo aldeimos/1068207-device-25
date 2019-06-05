@@ -225,9 +225,9 @@
           <input class="visually-hidden" type="radio" id="product-5" name="slider-2">
           <input class="visually-hidden" type="radio" id="product-6" name="slider-2">
           <div class="services-slider-controls">
-            <label class="input-button" for="product-4">Доставка</label>
-            <label class="input-button" for="product-5">Гарантия</label>
-            <label class="input-button" for="product-6">Кредит</label>
+            <label class="input-button input-button_delivery" for="product-4" tabindex="0">Доставка</label>
+            <label class="input-button input-button_warranty" for="product-5" tabindex="0">Гарантия</label>
+            <label class="input-button input-button_credit" for="product-6" tabindex="0">Кредит</label>
           </div>
           <ul class="services-slider__list">
             <li class="services-slider__list-item item-delivery">
@@ -292,14 +292,14 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о нас</a>
+          <a class="button about-us__button" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
             Всякое
             бывает.</p>
-          <p>
+          <p class="contacts__map">
             <img src="img/map-xs.jpg" alt="Офис компании по адресу г.Москва, ул. Строителей, 15" width="560"
               height="222">
           </p>
@@ -349,17 +349,18 @@
         <span class="custom-line"></span>
         <ul class="footer-social">
           <li>
-            <a class="social-button social-fb" href="#">Фейсбук</a>
+            <a class="social-button social-fb" href="#">Ссылка на нашу страницу в Фейсбуке</a>
           </li>
           <li>
-            <a class="social-button social-instagram" href="#">Инстагрэм</a>
+            <a class="social-button social-instagram" href="#">Ссылка на наш Инстагрэме</a>
           </li>
           <li>
-            <a class="social-button social-tw" href="#">Твиттер</a>
+            <a class="social-button social-tw" href="#">Ссылка на нашу страницу в Твиттере</a>
           </li>
         </ul>
         <p class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"
+            aria-label="Сайт разработчика HtmlAcademy">
             <img src="img/copyright-icon-1.svg" alt="HTML Академия" width="27" height="35">
           </a>
         </p>
@@ -394,6 +395,8 @@
     </p>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
+  <script src="js/README"></script>
 </body>
 
 </html>
