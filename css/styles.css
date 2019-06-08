@@ -1290,6 +1290,10 @@ p.contacts__map {
   margin: 0;
 }
 
+.modal-map iframe {
+  border-width: 0px;
+}
+
 .modal-map img {
   position: absolute;
   top: 0;
