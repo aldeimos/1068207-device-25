@@ -1264,11 +1264,16 @@ p.contacts__map {
 /* modals */
 
 .modal {
-  position: relative;
+  position: fixed;
+  top: 120px;
+  left: 480px;
+  z-index: 20;
+
   display: none;
   width: 960px;
   min-height: 550px;
 
+  background-color: #fff;
   box-shadow: 0 5px 25px 0px rgba(4, 6, 6, 0.3);
 }
 
@@ -1276,7 +1281,22 @@ p.contacts__map {
   border: 1px solid #fff;
 }
 
-.login-form {
+.modal-map {
+  height: 559px;
+}
+
+.modal-map p {
+  position: relative;
+  margin: 0;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.contacts-form {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -1284,7 +1304,7 @@ p.contacts__map {
   margin-top: 95px;
 }
 
-.login-form p {
+.contacts-form p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1293,7 +1313,7 @@ p.contacts__map {
   margin-right: auto;
 }
 
-.login-form__label {
+.contacts-form__label {
   margin-bottom: 10px;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -1305,16 +1325,16 @@ p.contacts__map {
 }
 
 
-.login-form input {
+.contacts-form input {
   width: 360px;
 }
 
-.login-form input[type="text"] {
+.contacts-form input[type="text"] {
   margin-right: 40px;
 }
 
-.login-form input,
-.login-form textarea {
+.contacts-form input,
+.contacts-form textarea {
   padding: 20px;
 
   font-size: 14px;
@@ -1325,46 +1345,103 @@ p.contacts__map {
   resize: none;
 }
 
-.login-form textarea {
+.contacts-form textarea {
   width: 760px;
   min-height: 156px;
 }
 
-.login-form .button {
+.contacts-form .button {
   margin-top: 30px;
   margin-bottom: 85px;
 }
 
-.login-form input:hover,
-.login-form textarea:hover {
+.contacts-form input:hover,
+.contacts-form textarea:hover {
   background: #eaeaea;
 }
 
-.login-form input:invalid,
-.login-form textarea:invalid {
+.contacts-form input:invalid,
+.contacts-form textarea:invalid {
   background: #f6dada;
 }
 
-.login-form input:focus,
-.login-form textarea:focus {
+.contacts-form input:focus,
+.contacts-form textarea:focus {
   background-color: #fff;
   border: 3px solid #f7e296;
   outline-color: #f7e296;
 }
 
 .modal-close {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+
   font-size: 0;
 
   border: none;
   background: transparent;
 }
 
+@keyframes appearance {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  30% {
+    transform: translateY(30px);
+  }
+
+  70% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.modal-show {
+  display: block;
+
+  animation-name: appearance;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 1s;
+}
+
 .modal-close::before {
   content: "";
   position: absolute;
-  right: 20px;
-  top: 20px;
-
+  top: -25px;
+  right: -25px;
   width: 55px;
   height: 55px;
 

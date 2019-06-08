@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
@@ -303,7 +303,7 @@
             <img src="img/map-xs.jpg" alt="Офис компании по адресу г.Москва, ул. Строителей, 15" width="560"
               height="222">
           </p>
-          <button class="button" type="button">Напишите нам</button>
+          <button class="button contact-us" type="button">Напишите нам</button>
         </section>
       </div>
     </div>
@@ -369,19 +369,20 @@
   </footer>
   <section class="modal modal-contacts">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label class="login-form__label" for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        <label class="contacts-form__label" for="name-field">Ваше имя:</label>
+        <input class="contacts-form__name" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label class="login-form__label" for="email-field">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        <label class="contacts-form__label" for="email-field">Ваш e-mail:</label>
+        <input class="contacts-form__email" type="email" name="email" id="email-field" placeholder="email@example.com">
       </p>
 
       <p>
-        <label class="login-form__label" for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+        <label class="contacts-form__label" for="comment-field">Текст письма:</label>
+        <textarea class="contacts-form__comment" name="comment" id="comment-field"
+          placeholder="В свободной форме"></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
@@ -391,12 +392,14 @@
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <p>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCGmUW-8" width="960" height="559" frameborder="1"
+        allowfullscreen="true"></iframe>
       <img src="img/map.jpg" alt="Офис компании по адресу г.Москва, ул. Строителей, 15" width="960" height="559">
     </p>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <script src="js/README"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
