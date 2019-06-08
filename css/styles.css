@@ -1291,7 +1291,7 @@ p.contacts__map {
 }
 
 .modal-map iframe {
-  border-width: 0px;
+  border: none;
 }
 
 .modal-map img {
