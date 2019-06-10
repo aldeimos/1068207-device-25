@@ -1164,7 +1164,7 @@ a.contact-us {
   margin-left: 0;
 }
 
-.service-list .service-list__item:nth-child(2) {
+.service-list .service-list__item:nth-child(3n-1) {
   margin-left: 0;
   margin-left: 35px;
   margin-right: 35px;
